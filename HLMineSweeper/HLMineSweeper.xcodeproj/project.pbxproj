@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDE3809D1B64AF4500C12248 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE3809C1B64AF4500C12248 /* UIImage+Tint.m */; };
+		CDE553401B5B8EC90036C9D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5533F1B5B8EC90036C9D7 /* main.m */; };
+		CDE5535D1B5B8EC90036C9D7 /* HLMineSweeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5535C1B5B8EC90036C9D7 /* HLMineSweeperTests.m */; };
+		CDE5536C1B5B90190036C9D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE553691B5B90190036C9D7 /* AppDelegate.m */; };
+		CDE5536D1B5B90190036C9D7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5536B1B5B90190036C9D7 /* BaseViewController.m */; };
+		CDE553711B5BA3CF0036C9D7 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE553701B5BA3CF0036C9D7 /* GameViewController.m */; };
+		CDE553751B5BAB020036C9D7 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE553741B5BAB020036C9D7 /* Tile.m */; };
+		CDE553781B5BAB290036C9D7 /* MineSweeperGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE553771B5BAB290036C9D7 /* MineSweeperGame.m */; };
+		CDE553951B5D4DD20036C9D7 /* UIView+position.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE553941B5D4DD20036C9D7 /* UIView+position.m */; };
+		CDE5539D1B5E16920036C9D7 /* UIButton+TileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5539C1B5E16920036C9D7 /* UIButton+TileButton.m */; };
+		CDE553A01B5E16A30036C9D7 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5539F1B5E16A30036C9D7 /* GameManager.m */; };
+		CDE553C71B5F7DCF0036C9D7 /* adjacent_0.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553B91B5F7DCF0036C9D7 /* adjacent_0.gif */; };
+		CDE553C81B5F7DCF0036C9D7 /* adjacent_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553BA1B5F7DCF0036C9D7 /* adjacent_1.gif */; };
+		CDE553C91B5F7DCF0036C9D7 /* adjacent_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553BB1B5F7DCF0036C9D7 /* adjacent_2.gif */; };
+		CDE553CA1B5F7DCF0036C9D7 /* adjacent_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553BC1B5F7DCF0036C9D7 /* adjacent_3.gif */; };
+		CDE553CB1B5F7DCF0036C9D7 /* adjacent_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553BD1B5F7DCF0036C9D7 /* adjacent_4.gif */; };
+		CDE553CC1B5F7DCF0036C9D7 /* adjacent_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553BE1B5F7DCF0036C9D7 /* adjacent_5.gif */; };
+		CDE553CD1B5F7DCF0036C9D7 /* adjacent_6.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553BF1B5F7DCF0036C9D7 /* adjacent_6.gif */; };
+		CDE553CE1B5F7DCF0036C9D7 /* adjacent_7.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C01B5F7DCF0036C9D7 /* adjacent_7.gif */; };
+		CDE553CF1B5F7DCF0036C9D7 /* adjacent_8.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C11B5F7DCF0036C9D7 /* adjacent_8.gif */; };
+		CDE553D01B5F7DCF0036C9D7 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C21B5F7DCF0036C9D7 /* bomb.png */; };
+		CDE553D11B5F7DCF0036C9D7 /* covered.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C31B5F7DCF0036C9D7 /* covered.gif */; };
+		CDE553D21B5F7DCF0036C9D7 /* flag.gif in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C41B5F7DCF0036C9D7 /* flag.gif */; };
+		CDE553D31B5F7DCF0036C9D7 /* mine_sweeped.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C51B5F7DCF0036C9D7 /* mine_sweeped.png */; };
+		CDE553D41B5F7DCF0036C9D7 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553C61B5F7DCF0036C9D7 /* mine.png */; };
+		CDE553D91B5F87B30036C9D7 /* face_aho.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553D51B5F87B30036C9D7 /* face_aho.png */; };
+		CDE553DA1B5F87B30036C9D7 /* face_sad.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553D61B5F87B30036C9D7 /* face_sad.png */; };
+		CDE553DB1B5F87B30036C9D7 /* face_smily.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553D71B5F87B30036C9D7 /* face_smily.png */; };
+		CDE553DC1B5F87B30036C9D7 /* face_yeh.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE553D81B5F87B30036C9D7 /* face_yeh.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDE553571B5B8EC90036C9D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDE553321B5B8EC90036C9D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE553391B5B8EC90036C9D7;
+			remoteInfo = HLMineSweeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDE3809B1B64AF4500C12248 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Tint.h"; path = "Classes/Category/UIImage+Tint.h"; sourceTree = "<group>"; };
+		CDE3809C1B64AF4500C12248 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Tint.m"; path = "Classes/Category/UIImage+Tint.m"; sourceTree = "<group>"; };
+		CDE5533A1B5B8EC90036C9D7 /* HLMineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLMineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE5533E1B5B8EC90036C9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE5533F1B5B8EC90036C9D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDE553561B5B8EC90036C9D7 /* HLMineSweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLMineSweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE5535B1B5B8EC90036C9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE5535C1B5B8EC90036C9D7 /* HLMineSweeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMineSweeperTests.m; sourceTree = "<group>"; };
+		CDE553681B5B90190036C9D7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		CDE553691B5B90190036C9D7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		CDE5536A1B5B90190036C9D7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Classes/BaseViewController.h; sourceTree = "<group>"; };
+		CDE5536B1B5B90190036C9D7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Classes/BaseViewController.m; sourceTree = "<group>"; };
+		CDE5536F1B5BA3CF0036C9D7 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = Classes/Controllers/GameViewController.h; sourceTree = "<group>"; };
+		CDE553701B5BA3CF0036C9D7 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = Classes/Controllers/GameViewController.m; sourceTree = "<group>"; };
+		CDE553731B5BAB020036C9D7 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tile.h; path = Classes/Models/Tile.h; sourceTree = "<group>"; };
+		CDE553741B5BAB020036C9D7 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tile.m; path = Classes/Models/Tile.m; sourceTree = "<group>"; };
+		CDE553761B5BAB290036C9D7 /* MineSweeperGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineSweeperGame.h; path = Classes/Models/MineSweeperGame.h; sourceTree = "<group>"; };
+		CDE553771B5BAB290036C9D7 /* MineSweeperGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineSweeperGame.m; path = Classes/Models/MineSweeperGame.m; sourceTree = "<group>"; };
+		CDE553791B5BB0510036C9D7 /* MineSweeper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MineSweeper-Prefix.pch"; sourceTree = "<group>"; };
+		CDE553931B5D4DD20036C9D7 /* UIView+position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+position.h"; path = "Vendors/UIView+Position/UIView+position.h"; sourceTree = "<group>"; };
+		CDE553941B5D4DD20036C9D7 /* UIView+position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+position.m"; path = "Vendors/UIView+Position/UIView+position.m"; sourceTree = "<group>"; };
+		CDE5539B1B5E16920036C9D7 /* UIButton+TileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+TileButton.h"; path = "Classes/Category/UIButton+TileButton.h"; sourceTree = "<group>"; };
+		CDE5539C1B5E16920036C9D7 /* UIButton+TileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TileButton.m"; path = "Classes/Category/UIButton+TileButton.m"; sourceTree = "<group>"; };
+		CDE5539E1B5E16A30036C9D7 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameManager.h; path = Classes/SharedManagers/GameManager.h; sourceTree = "<group>"; };
+		CDE5539F1B5E16A30036C9D7 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameManager.m; path = Classes/SharedManagers/GameManager.m; sourceTree = "<group>"; };
+		CDE553B91B5F7DCF0036C9D7 /* adjacent_0.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_0.gif; path = Resources/Images/adjacent_0.gif; sourceTree = "<group>"; };
+		CDE553BA1B5F7DCF0036C9D7 /* adjacent_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_1.gif; path = Resources/Images/adjacent_1.gif; sourceTree = "<group>"; };
+		CDE553BB1B5F7DCF0036C9D7 /* adjacent_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_2.gif; path = Resources/Images/adjacent_2.gif; sourceTree = "<group>"; };
+		CDE553BC1B5F7DCF0036C9D7 /* adjacent_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_3.gif; path = Resources/Images/adjacent_3.gif; sourceTree = "<group>"; };
+		CDE553BD1B5F7DCF0036C9D7 /* adjacent_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_4.gif; path = Resources/Images/adjacent_4.gif; sourceTree = "<group>"; };
+		CDE553BE1B5F7DCF0036C9D7 /* adjacent_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_5.gif; path = Resources/Images/adjacent_5.gif; sourceTree = "<group>"; };
+		CDE553BF1B5F7DCF0036C9D7 /* adjacent_6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_6.gif; path = Resources/Images/adjacent_6.gif; sourceTree = "<group>"; };
+		CDE553C01B5F7DCF0036C9D7 /* adjacent_7.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_7.gif; path = Resources/Images/adjacent_7.gif; sourceTree = "<group>"; };
+		CDE553C11B5F7DCF0036C9D7 /* adjacent_8.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = adjacent_8.gif; path = Resources/Images/adjacent_8.gif; sourceTree = "<group>"; };
+		CDE553C21B5F7DCF0036C9D7 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb.png; path = Resources/Images/bomb.png; sourceTree = "<group>"; };
+		CDE553C31B5F7DCF0036C9D7 /* covered.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = covered.gif; path = Resources/Images/covered.gif; sourceTree = "<group>"; };
+		CDE553C41B5F7DCF0036C9D7 /* flag.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = flag.gif; path = Resources/Images/flag.gif; sourceTree = "<group>"; };
+		CDE553C51B5F7DCF0036C9D7 /* mine_sweeped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mine_sweeped.png; path = Resources/Images/mine_sweeped.png; sourceTree = "<group>"; };
+		CDE553C61B5F7DCF0036C9D7 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mine.png; path = Resources/Images/mine.png; sourceTree = "<group>"; };
+		CDE553D51B5F87B30036C9D7 /* face_aho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_aho.png; path = Resources/Images/face_aho.png; sourceTree = "<group>"; };
+		CDE553D61B5F87B30036C9D7 /* face_sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_sad.png; path = Resources/Images/face_sad.png; sourceTree = "<group>"; };
+		CDE553D71B5F87B30036C9D7 /* face_smily.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_smily.png; path = Resources/Images/face_smily.png; sourceTree = "<group>"; };
+		CDE553D81B5F87B30036C9D7 /* face_yeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = face_yeh.png; path = Resources/Images/face_yeh.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDE553371B5B8EC90036C9D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE553531B5B8EC90036C9D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDE553311B5B8EC90036C9D7 = {
+			isa = PBXGroup;
+			children = (
+				CDE5533C1B5B8EC90036C9D7 /* HLMineSweeper */,
+				CDE553591B5B8EC90036C9D7 /* HLMineSweeperTests */,
+				CDE5533B1B5B8EC90036C9D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDE5533B1B5B8EC90036C9D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5533A1B5B8EC90036C9D7 /* HLMineSweeper.app */,
+				CDE553561B5B8EC90036C9D7 /* HLMineSweeperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDE5533C1B5B8EC90036C9D7 /* HLMineSweeper */ = {
+			isa = PBXGroup;
+			children = (
+				CDE553661B5B8F050036C9D7 /* Classes */,
+				CDE553861B5CE1DC0036C9D7 /* Resources */,
+				CDE5533D1B5B8EC90036C9D7 /* Supporting Files */,
+				CDE553921B5D4D7A0036C9D7 /* Vendors */,
+			);
+			path = HLMineSweeper;
+			sourceTree = "<group>";
+		};
+		CDE5533D1B5B8EC90036C9D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE553791B5BB0510036C9D7 /* MineSweeper-Prefix.pch */,
+				CDE5533E1B5B8EC90036C9D7 /* Info.plist */,
+				CDE5533F1B5B8EC90036C9D7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE553591B5B8EC90036C9D7 /* HLMineSweeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5535C1B5B8EC90036C9D7 /* HLMineSweeperTests.m */,
+				CDE5535A1B5B8EC90036C9D7 /* Supporting Files */,
+			);
+			path = HLMineSweeperTests;
+			sourceTree = "<group>";
+		};
+		CDE5535A1B5B8EC90036C9D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5535B1B5B8EC90036C9D7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE553661B5B8F050036C9D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5539A1B5E161D0036C9D7 /* Category */,
+				CDE553961B5D511F0036C9D7 /* SharedManagers */,
+				CDE553821B5CE0400036C9D7 /* Views */,
+				CDE553721B5BA43C0036C9D7 /* Models */,
+				CDE5536E1B5BA35F0036C9D7 /* Controllers */,
+				CDE553681B5B90190036C9D7 /* AppDelegate.h */,
+				CDE553691B5B90190036C9D7 /* AppDelegate.m */,
+				CDE5536A1B5B90190036C9D7 /* BaseViewController.h */,
+				CDE5536B1B5B90190036C9D7 /* BaseViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CDE5536E1B5BA35F0036C9D7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5536F1B5BA3CF0036C9D7 /* GameViewController.h */,
+				CDE553701B5BA3CF0036C9D7 /* GameViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CDE553721B5BA43C0036C9D7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDE553731B5BAB020036C9D7 /* Tile.h */,
+				CDE553741B5BAB020036C9D7 /* Tile.m */,
+				CDE553761B5BAB290036C9D7 /* MineSweeperGame.h */,
+				CDE553771B5BAB290036C9D7 /* MineSweeperGame.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CDE553821B5CE0400036C9D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CDE553861B5CE1DC0036C9D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CDE553871B5CE1F30036C9D7 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CDE553871B5CE1F30036C9D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CDE553B91B5F7DCF0036C9D7 /* adjacent_0.gif */,
+				CDE553BA1B5F7DCF0036C9D7 /* adjacent_1.gif */,
+				CDE553BB1B5F7DCF0036C9D7 /* adjacent_2.gif */,
+				CDE553BC1B5F7DCF0036C9D7 /* adjacent_3.gif */,
+				CDE553BD1B5F7DCF0036C9D7 /* adjacent_4.gif */,
+				CDE553BE1B5F7DCF0036C9D7 /* adjacent_5.gif */,
+				CDE553BF1B5F7DCF0036C9D7 /* adjacent_6.gif */,
+				CDE553C01B5F7DCF0036C9D7 /* adjacent_7.gif */,
+				CDE553C11B5F7DCF0036C9D7 /* adjacent_8.gif */,
+				CDE553C21B5F7DCF0036C9D7 /* bomb.png */,
+				CDE553C31B5F7DCF0036C9D7 /* covered.gif */,
+				CDE553D51B5F87B30036C9D7 /* face_aho.png */,
+				CDE553D61B5F87B30036C9D7 /* face_sad.png */,
+				CDE553D71B5F87B30036C9D7 /* face_smily.png */,
+				CDE553D81B5F87B30036C9D7 /* face_yeh.png */,
+				CDE553C41B5F7DCF0036C9D7 /* flag.gif */,
+				CDE553C51B5F7DCF0036C9D7 /* mine_sweeped.png */,
+				CDE553C61B5F7DCF0036C9D7 /* mine.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		CDE553921B5D4D7A0036C9D7 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				CDE553931B5D4DD20036C9D7 /* UIView+position.h */,
+				CDE553941B5D4DD20036C9D7 /* UIView+position.m */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		CDE553961B5D511F0036C9D7 /* SharedManagers */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5539E1B5E16A30036C9D7 /* GameManager.h */,
+				CDE5539F1B5E16A30036C9D7 /* GameManager.m */,
+			);
+			name = SharedManagers;
+			sourceTree = "<group>";
+		};
+		CDE5539A1B5E161D0036C9D7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5539B1B5E16920036C9D7 /* UIButton+TileButton.h */,
+				CDE5539C1B5E16920036C9D7 /* UIButton+TileButton.m */,
+				CDE3809B1B64AF4500C12248 /* UIImage+Tint.h */,
+				CDE3809C1B64AF4500C12248 /* UIImage+Tint.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDE553391B5B8EC90036C9D7 /* HLMineSweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE553601B5B8EC90036C9D7 /* Build configuration list for PBXNativeTarget "HLMineSweeper" */;
+			buildPhases = (
+				CDE553361B5B8EC90036C9D7 /* Sources */,
+				CDE553371B5B8EC90036C9D7 /* Frameworks */,
+				CDE553381B5B8EC90036C9D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HLMineSweeper;
+			productName = HLMineSweeper;
+			productReference = CDE5533A1B5B8EC90036C9D7 /* HLMineSweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDE553551B5B8EC90036C9D7 /* HLMineSweeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDE553631B5B8EC90036C9D7 /* Build configuration list for PBXNativeTarget "HLMineSweeperTests" */;
+			buildPhases = (
+				CDE553521B5B8EC90036C9D7 /* Sources */,
+				CDE553531B5B8EC90036C9D7 /* Frameworks */,
+				CDE553541B5B8EC90036C9D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDE553581B5B8EC90036C9D7 /* PBXTargetDependency */,
+			);
+			name = HLMineSweeperTests;
+			productName = HLMineSweeperTests;
+			productReference = CDE553561B5B8EC90036C9D7 /* HLMineSweeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDE553321B5B8EC90036C9D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Hao Liu";
+				TargetAttributes = {
+					CDE553391B5B8EC90036C9D7 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CDE553551B5B8EC90036C9D7 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CDE553391B5B8EC90036C9D7;
+					};
+				};
+			};
+			buildConfigurationList = CDE553351B5B8EC90036C9D7 /* Build configuration list for PBXProject "HLMineSweeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDE553311B5B8EC90036C9D7;
+			productRefGroup = CDE5533B1B5B8EC90036C9D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDE553391B5B8EC90036C9D7 /* HLMineSweeper */,
+				CDE553551B5B8EC90036C9D7 /* HLMineSweeperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDE553381B5B8EC90036C9D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE553CC1B5F7DCF0036C9D7 /* adjacent_5.gif in Resources */,
+				CDE553D11B5F7DCF0036C9D7 /* covered.gif in Resources */,
+				CDE553D01B5F7DCF0036C9D7 /* bomb.png in Resources */,
+				CDE553D31B5F7DCF0036C9D7 /* mine_sweeped.png in Resources */,
+				CDE553D41B5F7DCF0036C9D7 /* mine.png in Resources */,
+				CDE553DA1B5F87B30036C9D7 /* face_sad.png in Resources */,
+				CDE553C91B5F7DCF0036C9D7 /* adjacent_2.gif in Resources */,
+				CDE553DB1B5F87B30036C9D7 /* face_smily.png in Resources */,
+				CDE553CE1B5F7DCF0036C9D7 /* adjacent_7.gif in Resources */,
+				CDE553CF1B5F7DCF0036C9D7 /* adjacent_8.gif in Resources */,
+				CDE553D91B5F87B30036C9D7 /* face_aho.png in Resources */,
+				CDE553DC1B5F87B30036C9D7 /* face_yeh.png in Resources */,
+				CDE553CD1B5F7DCF0036C9D7 /* adjacent_6.gif in Resources */,
+				CDE553C81B5F7DCF0036C9D7 /* adjacent_1.gif in Resources */,
+				CDE553CA1B5F7DCF0036C9D7 /* adjacent_3.gif in Resources */,
+				CDE553CB1B5F7DCF0036C9D7 /* adjacent_4.gif in Resources */,
+				CDE553D21B5F7DCF0036C9D7 /* flag.gif in Resources */,
+				CDE553C71B5F7DCF0036C9D7 /* adjacent_0.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE553541B5B8EC90036C9D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDE553361B5B8EC90036C9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE5536D1B5B90190036C9D7 /* BaseViewController.m in Sources */,
+				CDE5536C1B5B90190036C9D7 /* AppDelegate.m in Sources */,
+				CDE5539D1B5E16920036C9D7 /* UIButton+TileButton.m in Sources */,
+				CDE553781B5BAB290036C9D7 /* MineSweeperGame.m in Sources */,
+				CDE553751B5BAB020036C9D7 /* Tile.m in Sources */,
+				CDE553951B5D4DD20036C9D7 /* UIView+position.m in Sources */,
+				CDE553A01B5E16A30036C9D7 /* GameManager.m in Sources */,
+				CDE3809D1B64AF4500C12248 /* UIImage+Tint.m in Sources */,
+				CDE553711B5BA3CF0036C9D7 /* GameViewController.m in Sources */,
+				CDE553401B5B8EC90036C9D7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDE553521B5B8EC90036C9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE5535D1B5B8EC90036C9D7 /* HLMineSweeperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDE553581B5B8EC90036C9D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDE553391B5B8EC90036C9D7 /* HLMineSweeper */;
+			targetProxy = CDE553571B5B8EC90036C9D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDE5535E1B5B8EC90036C9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDE5535F1B5B8EC90036C9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDE553611B5B8EC90036C9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HLMineSweeper/MineSweeper-Prefix.pch";
+				INFOPLIST_FILE = HLMineSweeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDE553621B5B8EC90036C9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HLMineSweeper/MineSweeper-Prefix.pch";
+				INFOPLIST_FILE = HLMineSweeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CDE553641B5B8EC90036C9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HLMineSweeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLMineSweeper.app/HLMineSweeper";
+			};
+			name = Debug;
+		};
+		CDE553651B5B8EC90036C9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HLMineSweeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HLMineSweeper.app/HLMineSweeper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDE553351B5B8EC90036C9D7 /* Build configuration list for PBXProject "HLMineSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE5535E1B5B8EC90036C9D7 /* Debug */,
+				CDE5535F1B5B8EC90036C9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE553601B5B8EC90036C9D7 /* Build configuration list for PBXNativeTarget "HLMineSweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE553611B5B8EC90036C9D7 /* Debug */,
+				CDE553621B5B8EC90036C9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDE553631B5B8EC90036C9D7 /* Build configuration list for PBXNativeTarget "HLMineSweeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDE553641B5B8EC90036C9D7 /* Debug */,
+				CDE553651B5B8EC90036C9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDE553321B5B8EC90036C9D7 /* Project object */;
+}

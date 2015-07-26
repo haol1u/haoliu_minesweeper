@@ -1,0 +1,14 @@
+//
+//  MineSweeper-Prefix.pch
+//  HLMineSweeper
+//
+//  Created by Hao Liu on 7/19/15.
+//  Copyright (c) 2015 Hao Liu. All rights reserved.
+//
+
+#ifdef __OBJC__
+// Core foundations
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+position.h"
+#endif
